@@ -2,10 +2,17 @@ ytlgrabber
 ==========
 
 A youtube video link grabber
-
-Only work when go in source and put in youtube link
+Saves links is in downloaded
 
 Dependencies:
 -Install beautifulsoup4
+
+Update:
+- Break big file into 3 py files
+- Added a simple download progress
+
+Usage:
+python main.py [youtubelink] [format] [quality]
+
 
 
