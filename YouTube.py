@@ -1,28 +1,28 @@
 #Tag : Dictionary of video format and its itag
 itag = {
-	"5"   : "240p   FLV",
-	"6"   : "270p   FLV",
-	"13"  : "N/A    3GP",
-	"17"  : "144p   3GP",
-	"18"  : "270p   MP4",
-	"22"  : "720p   MP4",
-	"34"  : "360p   FLV",
-	"35"  : "480p   FLV",
-	"36"  : "240p   3GP",
-	"37"  : "1080p  MP4",
-	"38"  : "3072p  MP4",
-	"43"  : "360p   WebM",
-	"44"  : "480p   WebM",
-	"45"  : "720p   WebM",
-	"46"  : "1080p  WebM",
-	"82"  : "360p   MP4",
-	"83"  : "240p   MP4",
-	"84"  : "720p   MP4",
-	"85"  : "520p   MP4",
-	"100" : "360p   MP4",
-	"101" : "360p   MP4",
-	"102" : "720p   WebM",
-	"120" : "720p   FLV"
+	"5"   : ("240p_FLV", "flv"),
+	"6"   : ("270p_FLV", "flv"),
+	"13"  : ("N/A_3GP", "3gpp"),
+	"17"  : ("144p_3GP", "3gpp"),
+	"18"  : ("270p_MP4", "mp4"),
+	"22"  : ("720p_MP4", "mp4"),
+	"34"  : ("360p_FLV", "flv"),
+	"35"  : ("480p_FLV", "flv"),
+	"36"  : ("240p_3GP", "3gpp"),
+	"37"  : ("1080p_MP4", "mp4"),
+	"38"  : ("3072p_MP4", "mp4"),
+	"43"  : ("360p_WebM", "webm"),
+	"44"  : ("480p_WebM", "webm"),
+	"45"  : ("720p_WebM", "webm"),
+	"46"  : ("1080p_WebM", "webm"),
+	"82"  : ("360p_MP4", "mp4"),
+	"83"  : ("240p_MP4", "mp4"),
+	"84"  : ("720p_MP4", "mp4"),
+	"85"  : ("520p_MP4", "mp4"),
+	"100" : ("360p_MP4", "mp4"),
+	"101" : ("360p_MP4", "mp4"),
+	"102" : ("720p_WebM", "webm"),
+	"120" : ("720p_FLV", "flv")
 }
 
 
@@ -36,7 +36,7 @@ class YouTube:
 		self.desc = ""
 		self.img = ""
 		self.id = ""
-	#tuple (format, direct link, size)
+	#tuple (format, direct link, size, urlhandler)
 	def addVideoLink(self,vili):
 		self.vl.append(vili)
 	def getVideoLink(self):
